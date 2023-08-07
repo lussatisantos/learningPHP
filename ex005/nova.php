@@ -17,7 +17,11 @@
         print("O valor digitado é $num");
         print("<p> O sucessor é $snum </p>");
         print("O antecessor é $anum");
-
     ?>
+    <p>
+        <a href="javascript:history.go(-1)">
+            <input type="submit" value="Voltar">
+        </a>
+    </p>
 </body>
 </html>
