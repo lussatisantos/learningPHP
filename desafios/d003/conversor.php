@@ -20,8 +20,10 @@
 
                 echo "<br> Por sua vez, " . numfmt_format_currency($padrao, $moeda, "AOA") . " equivalem a " . numfmt_format_currency($padrao, $conversao, "USD");
 
-                echo "<br> <br>Cotacao valida em 7/ago/2023";
+                echo "<br> <br> <em>Cotacao valida em 7/ago/2023, o nosso sistema indica que actualmente estamos em </em>" . date("d, M, Y") . " <em> por favor <a href='https://www.google.com/search?q=1+dolar+em+kwanza&oq=1+dolar+em+jw&gs_lcrp=EgZjaHJvbWUqCQgBEAAYDRiABDIGCAAQRRg5MgkIARAAGA0YgAQyCQgCEAAYDRiABDIKCAMQABgIGA0YHjIKCAQQABgIGA0YHtIBCDY3NDNqMWo3qAIAsAIA&sourceid=chrome&ie=UTF-8' target='_blank'>clique aqui</a> ter a cotacao actualizada </em>";
             ?>
+            <p></p>
+<button onclick="javascript:window.location.href='index.html'">Voltar a converter</button>
     </main>
 </body>
 </html>
