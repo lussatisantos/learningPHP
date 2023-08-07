@@ -13,9 +13,14 @@
         <main>
             <?php 
                 $moeda = $_POST["valor"];
+                $conversao = $moeda / 824.94;
                 $padrao = numfmt_create("pt_AO", NumberFormatter::CURRENCY);
 
-                echo "Voce pretende converter " . numfmt_format_currency($padrao, $moeda, "AOA") . " em Dolar Americano" ;
+                echo "Voce pretende converter " . numfmt_format_currency($padrao, $moeda, "AOA") . " em Dolar Americano";
+
+                echo "<br> Por sua vez, " . numfmt_format_currency($padrao, $moeda, "AOA") . " equivalem a " . numfmt_format_currency($padrao, $conversao, "USD");
+
+                echo "<br> <br>Cotacao valida em 7/ago/2023";
             ?>
     </main>
 </body>
