@@ -7,8 +7,16 @@
     <link rel="stylesheet" href="../../exercicios/ex004/style.css">
 </head>
 <body>
+    <h1>GERADOR DE NUMEROS</h1>
     <main>
+        <?php 
+            $min = 0;
+            $max = 100;
+            $num = mt_rand($min, $max);
 
+            print("Gerador de numero de 0 à 100");
+            print("<br> Gerando: <strong>$num</strong>");
+        ?>
     </main>
 </body>
 </html>
