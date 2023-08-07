@@ -13,7 +13,9 @@
         <main>
             <?php 
                 $moeda = $_POST["valor"];
-                echo "Voce digitou $moeda";
+                $padrao = numfmt_create("pt_AO", NumberFormatter::CURRENCY);
+
+                echo "Voce pretende converter " . numfmt_format_currency($padrao, $moeda, "AOA") . " em Dolar Americano" ;
             ?>
     </main>
 </body>
