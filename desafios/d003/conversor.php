@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="../../exercicios/ex004/style.css">
 </head>
 <body>
-    <main>
+    <header>
         <h1>CONVERSOR DE MOEDA</h1>
-        
-        <?php 
-
-        ?>
+    </header>
+        <main>
+            <?php 
+                $moeda = $_POST["valor"];
+                echo "Voce digitou $moeda";
+            ?>
     </main>
 </body>
 </html>
