@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="../../exercicios/ex004/style.css">
 </head>
 <body>
-    <h1>GERADOR DE NUMEROS</h1>
-    <main>
+<main>
+<h1>SORTEADOR DE NUMEROS</h1>
         <?php 
             $min = 0;
             $max = 100;
             $num = mt_rand($min, $max);
 
-            print("Gerador de numero de 0 à 100");
-            print("<br> Gerando: <strong>$num</strong>");
+            print("Sorteador de numero de 0 à 100");
+            print("<br> Sorteando: <strong>$num</strong>");
         ?>
-    </main>
+    <button onclick="javascript:window.location.href='index.php'">Gerar</button>    
+</main>
+    
 </body>
 </html>
