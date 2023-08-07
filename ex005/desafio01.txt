@@ -1,0 +1,1 @@
+Cria um aplicativo em PHP que calcule o sucessor e antecessor de um numero
