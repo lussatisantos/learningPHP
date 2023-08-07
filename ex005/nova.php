@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="../ex004/style.css">
 </head>
 <body>
+    <main>
     <?php 
         $num = $_POST["numero"];
         $snum = $num + 1;
         $anum = $num - 1;
         echo "<header>
-        <h1> Resultado</h1>
+        <h2> Resultado  final</h2>
         </header>";
         print("O valor digitado é $num");
         print("<p> O sucessor é $snum </p>");
@@ -23,5 +24,6 @@
             <input type="submit" value="Voltar">
         </a>
     </p>
+</main>
 </body>
 </html>
