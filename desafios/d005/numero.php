@@ -10,9 +10,15 @@
     <h1>Resulltado da analise</h1>
     <main>
         <?php 
-            $num = $_POST["n"];
-            echo "$num";
+            $num = $_POST["n"] ?? 0;
+            echo "Analisando o numero <strong>". number_format($num, 3, ",","."). "</strong> digitado pelo usuario";
+
+            $int = (int) $num;
+            //$fra = ;
+
+            echo "<ul> <li> A parte inteira do numero e <stong>$int</strong></li></ul>";
         ?>
+        <button onclick="javascript:history.go(-1)">Voltar</button>
     </main>
 </body>
 </html>
