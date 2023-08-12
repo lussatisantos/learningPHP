@@ -28,7 +28,13 @@
                 var_dump($_COOKIE);
 
                 echo "<h1>Superglobal SESSION</h1>";
-                var_dump($_SESSION)
+                var_dump($_SESSION);
+            
+                echo "<h1>Superglobal ENV</h1>";
+                var_dump($_ENV);
+                foreach (getenv() as $c => $v){
+                    echo "<br> $c - $v";
+                }
             ?>
         </pre>
     </main>
