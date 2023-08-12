@@ -10,7 +10,11 @@
     <main>
         <pre>
             <?php 
-                echo "<h1> Superglobal PHP</h1>";
+                echo "<h1> Superglobal GET</h1>";
+                var_dump($_GET);
+
+                echo "<h1>Superglobais POST</h1>";
+                var_dump($_POST)
             ?>
         </pre>
     </main>
