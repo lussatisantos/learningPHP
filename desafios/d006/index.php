@@ -23,9 +23,20 @@
     </main>
     <section id="resultado">
         <h2>Resultado anatomico</h2>
-    <?php 
-        print("O dividendo e <strong>$Dividendo</strong> e o divisor <strong>$Divisor</strong> <br> A divisao sera igual a <strong>" .  $div=intdiv($Dividendo, $Divisor). "</strong> <br> O resto da divisao <strong>" . $div=$Dividendo%$Divisor) . "</strong>";
-    ?>
+        <?php 
+            $inteiro = intdiv($Dividendo, $Divisor);
+            $resto = $Dividendo % $Divisor;
+        ?>
+        <table class="divisao">
+            <tr>
+                <td><?=$Dividendo?></td>
+                <td><?=$Divisor?></td>
+            </tr>
+            <tr>
+                    <td><?=$resto?></td>
+                    <td><?=$inteiro?></td>
+            </tr>
+        </table>
     </section>
 </body>
 </html>
