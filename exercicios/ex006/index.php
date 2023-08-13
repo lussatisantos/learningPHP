@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="../ex005/style.css">
 </head>
 <body>
-    <?php 
-    
-    ?>
+    <main>
+        <form action="" method="get">
+            <label for="v1">Valor 1</label>
+            <input type="number" name="v1" id="idv1">
+            <label for="v2">Valor 2</label>
+            <input type="number" name="v2" id="idv2">
+            <input type="submit" value="Calcular">
+        </form>
+    </main>
 </body>
 </html>
