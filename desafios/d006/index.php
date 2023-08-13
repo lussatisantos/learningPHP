@@ -21,8 +21,11 @@
             <input type="submit" value="Analisar">
         </form>
     </main>
+    <section id="resultado">
+        <h2>Resultado anatomico</h2>
     <?php 
-    
+        print("O dividendo e <strong>$Dividendo</strong> e o divisor <strong>$Divisor</strong> <br> A divisao sera igual a <strong>" .  $div=intdiv($Dividendo, $Divisor). "</strong> <br> O resto da divisao <strong>" . $div=$Dividendo%$Divisor) . "</strong>";
     ?>
+    </section>
 </body>
 </html>
