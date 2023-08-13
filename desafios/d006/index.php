@@ -6,9 +6,13 @@
     <title>Desafio PHP</title>
 </head>
 <body>
+    <?php 
+        $Dividendo = $_POST['dividendo'];
+        $Divisor = $_POST['divisor'];
+    ?>
     <main>
         <h1>Anatomia de uma divisao</h1>
-        <form action="" method="post">
+        <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
             <label for="dividendo">Dividendo</label>
             <input type="number" name="dividendo" id="iddividendo">
             <label for="divisor">Divisor</label>
