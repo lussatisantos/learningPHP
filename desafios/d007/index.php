@@ -20,13 +20,14 @@
         </form>
     </main>
     <?php 
+        $padrao = numfmt_create('AOA', NumberFormatter::CURRENCY);
         $tot_sal = intdiv($sal, 40000);
         $sobra = $sal - ($tot_sal * 40000)
     ?>
     <section id="resulado">
         <h2>Resultado final</h2>
         <?php 
-            print("Quem tem um salario de ".$sal." Kz, ganha <strong> ".$tot_sal." salarios minimos</strong> + ".$sobra." sobrando na carteira");
+            print("Quem tem um salario de ".numfmt_format_currency($padrao, $sal, "AOA")."  ganha <strong> ".$tot_sal." salarios minimos</strong> + ".numfmt_format_currency($padrao, $tot_sal, "AOA")." sobrando na carteira");
         ?>
     </section>
 </body>
