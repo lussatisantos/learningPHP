@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../ex005/style.css">
 </head>
 <body>
-   
     <?php
     // Capturando os dados do formulario Retroalimentado 
         $valor1 = $_GET['v1'] ?? 0;
@@ -23,9 +22,12 @@
             <input type="submit" value="Somar">
         </form>
     </main>
-
     <section id="resultado">
         <h2>Resultado da soma</h2>
+        <?php 
+            $soma = $valor1 + $valor2;
+            echo "<p>A soma entre os valores $valor1 e $valor2 sera <strong>$soma</strong></p>";
+        ?>
     </section>
 </body>
 </html>
