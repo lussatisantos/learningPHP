@@ -25,7 +25,11 @@
     <section id="resultado">
         <h2>Resultado final</h2>
         <?php 
-            
+            print("Analisando o <strong> $num</strong, temos:");
+            print("<ul>
+            <li>A sua raiz quadrada e de <strong>$raizq</strong></li>
+            <li>A sua raiz cubica e de <strong>$raizcubico</strong></li>
+            </ul>");
         ?>
     </section>
 </body>
