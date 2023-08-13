@@ -21,7 +21,13 @@
     </main>
     <?php 
         $tot_sal = intdiv($sal, 40000);
-        echo "$tot_sal";
+        $sobra = $sal - ($tot_sal * 40000)
     ?>
+    <section id="resulado">
+        <h2>Resultado final</h2>
+        <?php 
+            print("Quem tem um salario de ".$sal." Kz, ganha <strong> ".$tot_sal." salarios minimos</strong> + ".$sobra." sobrando na carteira");
+        ?>
+    </section>
 </body>
 </html>
